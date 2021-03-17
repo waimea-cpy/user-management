@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+body {
+    padding: 0 2rem 1rem;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    color: #036;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    /* gap: 0.5rem; */
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.3rem 0.5rem;
+    /* background: #eee; */
+    text-decoration: none;
+    color: #333;
+    border-radius: 0.3rem;
+}
+
+nav a:hover, nav a:active {
+    background: #036;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #036;
+}
+
+#welcome img {
+    height: 8rem;
+}
+
+input, select {
+    display: block;
+    width: 20rem;
+    font-size: 1rem;
+    padding: 0.1rem 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+input[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.3rem;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+    color: #369;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0 1rem 2rem;
+}
+
+th {
+    background: #036;
+    color: #fff;
+    font-weight: normal;
+    text-align: left;
+}
+
+th.blank {
+    background: none;
+    border: none;
+}
+
+th, td {
+    border: 1px solid #666;
+    padding: 0.4rem 0.8rem;
+}
+
+td.actions {
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+    border: none;
+}
+
+td.actions a {
+    color: #036;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+}
+
+td.actions a:hover {
+    background: #036;
+    color: #fff;
+}
+
+.warning {
+    color: #f00 !important;
+}
+
