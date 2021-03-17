@@ -5,10 +5,14 @@
  * Returns the database connection object
  *-------------------------------------------------------------*/
 function connectToDB() {
-    return new mysqli( 'localhost',  // MySQL Server address
-                       'cpy_db',     // DB Username
-                       'Ilj',        // DB Password
-                       'cpy_user_accounts' ); // Database to connect to
+
+    $user = file_get_contents( '.username.txt' );
+    $pass = file_get_contents( '.password.txt' );
+
+    return new mysqli( 'localhost',            // MySQL Server address
+                       $user,                  // DB Username
+                       $pass,                  // DB Password
+                       'cpy_user_accounts' );  // Database to connect to
 }
 
 /*-------------------------------------------------------------
