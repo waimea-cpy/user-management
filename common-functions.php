@@ -12,7 +12,7 @@ function connectToDB() {
     return new mysqli( 'localhost',            // MySQL Server address
                        $user,                  // DB Username
                        $pass,                  // DB Password
-                       'cpy_user_accounts' );  // Database to connect to
+                       'cpy_300_users' );      // Database to connect to
 }
 
 /*-------------------------------------------------------------
